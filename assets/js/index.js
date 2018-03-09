@@ -14,11 +14,11 @@ function photosConfirmed(response){
     var html = ` <div class="card" style="width: 18rem;">
     <img class="card-img-top" src="${photos[i].thumbnailUrl}" alt="Card image cap">
     <div class="card-body">
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <p class="card-text">${photos[i].title}</p>
     </div>
   </div>`
     $(".photos").append(html)  
-    $(".photos").css({"display":"flex", "flex-wrap":"wrap"});  
+    $(".photos").css({"display":"flex", "flex-wrap":"wrap", "text-align":"center"});  
 
     }
     console.log(photos);
